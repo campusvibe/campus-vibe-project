@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusVibe - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <div class="logo">
+    <span>ϟ</span>
+</div>
+
+        <h1>CAMPUSVIBE</h1>
+
+        <form id="loginForm">
+
+            <div class="input-group">
+                <label for="email">University Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="Enter your university email"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="Enter your password"
+                >
+            </div>
+
+            <button type="submit" id="loginButton" disabled>LOGIN</button>
+
+        </form>
+
+        <p class="signup-text">
+            New here?
+            <a href="signup.html">Create an account</a>
+        </p>
+
+        </main>
+
+    <script>
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const loginButton = document.getElementById("loginButton");
+
+        function checkFields() {
+            if (email.value.trim() !== "" && password.value.trim() !== "") {
+                loginButton.disabled = false;
+                loginButton.classList.add("active");
+            } else {
+                loginButton.disabled = true;
+                loginButton.classList.remove("active");
+            }
+        }
+
+        email.addEventListener("input", checkFields);
+        password.addEventListener("input", checkFields);
+    </script>
+
+</body>
+</html>
