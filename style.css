@@ -23,13 +23,8 @@ body {
 
 .logo {
     font-size: 70px;
-    color: #00f5ff;
+    color: #00D9FF;
     margin-bottom: 5px;
-
-    text-shadow:
-        0 0 5px #00f5ff,
-        0 0 15px #00f5ff,
-        0 0 30px #00f5ff;
 }
 
 .logo span {
@@ -55,16 +50,6 @@ form {
 .input-group {
     text-align: left;
     margin-bottom: 25px;
-}
-
-.input-group label {
-    display: block;
-    margin-bottom: 9px;
-
-    color: #00f5ff;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
 }
 
 .input-group input {
